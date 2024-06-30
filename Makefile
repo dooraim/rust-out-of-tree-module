@@ -7,3 +7,6 @@ default:
 
 modules_install: default
 	$(MAKE) -C $(KDIR) M=$$PWD modules_install
+
+clean:
+	rm -f .rust* rust*.o rust*.cmd rust*.mod rust*.mod.c rust*.ko module* Module*
